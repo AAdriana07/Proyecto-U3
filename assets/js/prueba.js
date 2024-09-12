@@ -1,4 +1,4 @@
-/*function getDragonBallZ(id) {
+function getDragonBallZ(id) {
     $.get(`https://dragonball-api.com/api/characters/${id}`, function (data) {
         
         //Esta funcion mostrara los personajes
@@ -55,40 +55,4 @@ $(document).ready(function () {
     for (let i = 1; i <= 20; i++) {
         getDragonBallZ(i);
     }
-  });*/
-
-  function getDragonBallZ(id) {
-    $.get(`https://dragonball-api.com/api/characters/${id}`, function (data) {
-        if (!data) {
-            console.error("No data found for character with ID:", id);
-            return;
-        }
-
-        // Crea la tarjeta del personaje
-        let dragonbzCard = $("<div></div>").addClass("dragon-card");
-
-        // Nombre y ID del personaje
-        let name = $(`<a href="./pag-personajes.html" id="${id}"></a>`).text(data.name.toUpperCase());
-        name.addClass("personaje-name");
-        let num = $("<p></p>").text(`#${data.id}`);
-
-        let nameContainer = $("<div></div>").addClass("name-container");
-        nameContainer.append(name, num);
-
-        // Imagen del personaje
-        let img = $("<img />").attr("src", data.image);
-
-        // Tipos del personaje
-        let tipos = $("<div></div>").addClass("tipos");
-        if (data.race) {
-            let tipoElement = $("<p></p>").text(data.race.toUpperCase());
-            tipos.append(tipoElement);
-        }
-
-        // Agregar elementos a la tarjeta
-        dragonbzCard.append(nameContainer, img, tipos);
-        $("#dragon-container").append(dragonbzCard);
-    }).fail(function () {
-        console.error("Error fetching character with ID:", id);
-    });
-}
+  });
