@@ -6,7 +6,7 @@ function getDragonBall(id) {
         // Mostrar nombre y el ki del personaje
         let name = $(`<a href="detalles-per.html" id="personaje-${id}"></a>`).text(
             data.name.toUpperCase()
-        ).addClass("personale-name");
+        ).addClass("personajes-name");
         let ki = $("<p></p>").text(data.ki);
         
         let nameContainer = $("<div></div>").addClass("name-container");
@@ -14,6 +14,8 @@ function getDragonBall(id) {
 
         //Mostrar imagen 
         let img = $("<img />").attr("src", data.image);
+
+        // ki, race, gender, originPlanet.name
         //Mostrar race, gender, planet
         let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race");
         let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender");
@@ -47,4 +49,3 @@ $(document).ready(function () {
         getDragonBall(i);
     }
 });
-// ki, race, gender, originPlanet.name
