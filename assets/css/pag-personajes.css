@@ -1,36 +1,35 @@
-#dragon-container {
+#personajes-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-  }
-  
-  .dragon-card {
+    gap: 20px; /*sirve para los espacios de las cards*/
+}
+
+.personajes-card {
     border: 1px solid #aaa;
     border-radius: 10px;
     width: fit-content;
     padding: 0px 20px 10px;
   }
   
-  .name-container {
+.name-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
-  .name-container > p {
+.name-container > p {
     font-size: 24px;
     font-weight: bold;
-  }
+}
   
-  .dragon-card > img {
-    width: 250px;
-  }
+.personajes-card > img {
+    width: 200px;
+}
   
-  .tipos {
+.ki {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
-  
+}

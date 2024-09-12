@@ -4,9 +4,9 @@ function getDragonBallZ(id) {
         //Esta funcion mostrara los personajes
         let dragonbzCard = $("<div></div>").addClass("dragon-card"); 
         
-        // Nombre y id del peronaje
-        let name = $(`<a href="./pag-personajes.html" id="${id}"></a`).text(
-            data.name.toUpperCase()
+        // Nombre y ki del peronaje
+        let name = $(`<a href="./pag-personajes.html" id="${id}"></a>`).text(
+            data.name.toUpperCase() // en uso
     );
     name.addClass("personaje-name");
       let num = $("<p></p>").text(`#${data.order}`);
@@ -16,23 +16,23 @@ function getDragonBallZ(id) {
 
     // Imagen de los personajes
     let img = $("<img />").attr(
-        "src", 
-        data.items["image"].front_default//error
+        "src", data.image
     );
 
-    let tipos = $("<div></div>").addClass("tipos");
-    let tiposData  = data.types;
-    console.log(tiposData);
+    let ki = $("<div></div>").addClass("ki");
+    let kiData  = data.ki;
+    console.log(kiData);
 
-    for (let tipo of tiposData) {
-        let tipoElement = $("<p></p>").text(tipo.type.name.toUpperCase());
-        tipoElement.addClass(tipo.type.name);
-        tipos.append(tipoElement);
+    //El error 
+    for (let kis of kiData) {
+        let kisElement = $("<p></p>").text(kis.ki.name.toUpperCase());
+        kisElement.addClass(kis.ki.name);
+        kis.append(kisElement);
     }
 
     //Agregamo el elemento card
 
-    dragonbzCard.append(nameContainer, img, tipos);
+    dragonbzCard.append(nameContainer, img, ki);
     //Agregamos la card al contenedor
     $("#dragon-container").append(dragonbzCard);
     });
@@ -52,7 +52,7 @@ $(document).on("click",".personaje-name", function (e) {
 
 $(document).ready(function () {
     // Acá escribo mi código
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 44; i++) {
         getDragonBallZ(i);
     }
   });
