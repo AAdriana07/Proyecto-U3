@@ -9,31 +9,27 @@ $(document).ready(function () {
         data.name.toUpperCase()
     ).addClass("personale-name");
 
-    let name2 = $(`<h3">data.name</h3>`).text(data.name.toUpperCase());
-    name.addClass("pokemon-name");
-    let num = $("<p></p>").text(`#${data.order}`);
-  
-    let nameContainer = $("<div></div>").addClass("name-container");
-    nameContainer.append(name, num);
-  
-    // Imagen del pokemon
-    let img = $("<img />").attr(
-      "src",
-      data.sprites.other["official-artwork"].front_default
-    );
-  
-    let tipos = $("<div></div>").addClass("tipos");
-    let tiposData = data.types;
-  
-    for (let tipo of tiposData) {
-      let tipoElement = $("<p></p>").text(tipo.type.name.toUpperCase());
-      tipoElement.addClass(tipo.type.name);
-      tipos.append(tipoElement);
-    }
-  
-    // Agregamos los elementos a la card
-    pokeCard.append(nameContainer, img, tipos);
-    // Agregamos la card al contenedor
-    $("#pokemon-container").append(pokeCard);
+    let ki = $("<p></p>").text(data.ki);
+        
+        let nameContainer = $("<div></div>").addClass("name-container");
+        nameContainer.append(name, ki);
+
+        //Mostrar imagen 
+        let img = $("<img />").attr("src", data.image);
+
+        // ki, race, gender, originPlanet.name
+        //Mostrar race, gender, planet
+        let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race");
+        let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender");
+        let planet = $("<p></p>").text(data.originPlanet.name.toUpperCase()).addClass("planet");
+
+        let infoCard = $("<div></div>").addClass("info-card");
+        infoCard.append(race, gender, planet);
+
+        //Agregamos los elementos al card
+        personajesCard.append(nameContainer, img, infoCard);
+        //Agregamos la card al contendor 
+        $("#personajes-container").append(personajesCard);
+
   });
   
