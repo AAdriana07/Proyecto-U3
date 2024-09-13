@@ -37,10 +37,12 @@ function getDragonBall(id) {
 
 $(document).on("click", ".name-container", function (e) {
     console.log(e.target.id);
+    const id = e.target.id.split("-")[1];
   
-    $.get(`https://dragonball-api.com/api/characters/${e.target.id}`, function (data) {
+    $.get(`https://dragonball-api.com/api/characters/${id}`, function (data) {
       // GUARDAMOS TODA LA DATA DEL POKEMON EN EL LOCALSTORAGE
-      localStorage.setItem("dragonball-data", JSON.stringify(data));
+      localStorage.setItem("personaje-data", JSON.stringify(data));
+      console.log(e.target.id);
     });
 });
 

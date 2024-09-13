@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    const data = JSON.parse(localStorage.getItem("dragonball-data"));
-    console.log(data);
-  
+    const data = JSON.parse(localStorage.getItem("personaje-data"));
+
     // Mi función para mostrar los pokemones
     let personajesCard = $("<div></div>").addClass("personajes-card");
     // Nombre y numero del pokemon
-    let name = $("<h3>data.name</h3>").text(data.name.toUpperCase()).addClass("personale-name");
+    let name = $("<h1>data.name</h1>").text(
+        data.name.toUpperCase()).addClass("personajes-name");
 
     let ki = $("<p></p>").text(data.ki);
     
@@ -17,30 +17,26 @@ $(document).ready(function () {
 
     // ki, race, gender, originPlanet.name
     //Mostrar race, gender, planet
-    let maxKi = $("<p></p>").text(data.maxKi).addClass("maxki");
+    let maxKi = $(`<p>MaxKi: ${data.maxKi}</p>`).addClass("maxki");
     let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race");
     let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender");
     let description = $("<p></p>").text(data.description).addClass("description");
+    let infoCard = $("<div></div>").addClass("info-card");
+    infoCard.append(maxKi, race, gender, description);
+
+    //Contenedor planeta
+    let planetContainer = $("<div></div>").addClass("planet-container");
+    let namePlaneta = $("<p></p>").text(data.originPlanet);
+    console.log(namePlaneta);
+    let planetImg = $("<img />").attr("src", data.originPlanet.image);
+    let isDestroyed = $("<p></p>").text(data.originPlanet.isDestroyed);
+    let planetDescription = $("<p></p>").text(data.originPlanet.description);
+    planetContainer.append(namePlaneta, planetImg, isDestroyed, planetDescription);
+    console.log(planetContainer);
     
     let planet = $("<p></p>").text(data.originPlanet.name.toUpperCase()).addClass("planet");
-//Alexia que falta hacer? :) estaba leendo mas a fondo el documento //la api :)
-// puedes clonarlo a lo que falta, porque solo esta de personajes, puedes clonarlo en otro archivo para 
-//planetas, esferas y eso
-// chicas :) hola puedes ayudar tambien a clonar favor okey, cómo se hace
-//Craea nuevos hmtl y js y cambia de nombre de acuerdo a lo que falta por ejeplo ya esta pag-personajes.html entosce
-//copio y pego esto en cada js? si crea otros html y js y copia y modifica por favorrr
 
-//okay, pero entonces que agregaremos... planetas,trasnformaciones, esferas tambien pero lo de las esferas no esta en la api
-// hay que revizar por siacaco ...si no esta ni modo 
-//ya revise pero no hay es
 
-//hay...
-//tranformaciones
-//planetas
-//sare ??
-
-let infoCard = $("<div></div>").addClass("info-card");
-    infoCard.append(race, gender, planet);
 
     //Agregamos los elementos al card
     personajesCard.append(nameContainer, img, infoCard);
@@ -48,4 +44,4 @@ let infoCard = $("<div></div>").addClass("info-card");
     $("#personajes-container").append(personajesCard);
 
 });
-  
+
