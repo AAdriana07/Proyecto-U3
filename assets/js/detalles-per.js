@@ -30,23 +30,25 @@ $(document).ready(function () {
     let isDestroyed = $("<p></p>").text(data.originPlanet.isDestroyed);
     let planetDescription = $("<p></p>").text(data.originPlanet.description);
     
+    planetCard.append(namePlaneta, planetImg, isDestroyed, planetDescription);
     // Mi función para mostrar el transformaciones del personaje
     let transforCard = $("<div></div>").addClass("transfor-card");
     //Info
-    for (let transformations of data.transformations) {
+    for (let transformation of data.transformations) {
           
         //Informacion de las trasformaciones del personaje
-        let nameTrasfor = $(`<p></p>`).text(transformations.name.toUpperCase()).addClass("name-transfor");
-        let idTrasfor = $(`<p></p>`).text(`#${transformations.id}`).addClass("idTrasfor");
-        let imgTrasfor = $(`<img />`).attr("src", transformations.image).addClass("name-transfor");
-        let kiTrasfor = $(`<p></p>`).text(character.ki).addClass("ki-trasfor");
-        transforCard.append(nameTrasfor, imgTrasfor, idTrasfor, kiTrasfor);
+        let nameTrasfor = $(`<p></p>`).text(transformation.name.toUpperCase()).addClass("name-transfor");
+        let idTrasfor = $(`<p></p>`).text(`#${transformation.id}`).addClass("id-Trasfor");
+        let imgTrasfor = $(`<img />`).attr("src", transformation.image).addClass("img-transfor");
+        let kiTrasfor = $(`<p></p>`).text(transformation.ki).addClass("ki-trasfor");
+        //Añadiendo elementos al transforCard 
+        transforCard.append(nameTrasfor, idTrasfor, imgTrasfor, kiTrasfor);
     }
 
     //Agregamos los elementos al card
     personajesCard.append(nameContainer, img, infoCard);
     infoCard.append(maxKi, race, gender, description);
-    planetCard.append(namePlaneta, planetImg, isDestroyed, planetDescription);
+    
 
     //Agregamos la card al contendor 
     $("#personajes-container").append(personajesCard);

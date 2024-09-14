@@ -43,7 +43,7 @@ $(document).on("click", ".name-container", function (e) {
 });
 
 $(document).ready(function () {
-    for (let i = 1; i <= 58; i++) {
+    for (let i = 1; i <= 20; i++) {
         getPlanets(i);
     }
 });

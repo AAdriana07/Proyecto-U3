@@ -47,7 +47,7 @@ $(document).on("click", ".name-container", function (e) {
 });
 
 $(document).ready(function () {
-    for (let i = 1; i <= 44; i++) {
+    for (let i = 1; i <= 58; i++) {
         getDragonBall(i);
     }
 });

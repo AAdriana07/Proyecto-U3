@@ -30,7 +30,7 @@ $(document).ready(function () {
         for (let character of data.characters) {
           
             //Informacion de los personajes del planeta
-            let img = $(`<img />`).attr("src", character.image).addClass("name-char");
+            let img = $(`<img />`).attr("src", character.image).addClass("img-char");
             let name = $(`<p></p>`).text(character.name).addClass("name-char");
             let maxKi = $(`<p></p>`).text(character.maxKi).addClass("maxKi-char");
             let race = $(`<p></p>`).text(character.race).addClass("race");
