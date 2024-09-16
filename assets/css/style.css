@@ -24,19 +24,21 @@ main {
     font-size: 22px;
     background: rgba(0, 0, 0, 0.92);
     color: white;
-    width: 45%;
+    width: 50%;
     box-shadow: 10px 10px 10px #d8eff3;
     min-height: 60%;
-    padding: 60px;
+    padding: 40px;
     border-radius: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
 }
 
 .img-title {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
 }

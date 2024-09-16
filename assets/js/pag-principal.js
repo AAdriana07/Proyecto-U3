@@ -1,4 +1,4 @@
-function getDragonBall(id) {
+/*function getDragonBall(id) {
     $.get(`https://dragonball-api.com/api/characters/${id}`, function (data) {
         // Función para mostrar los personajes
         let personajesCard = $("<div></div>").addClass("personajes-card");
@@ -50,3 +50,5 @@ $(document).ready(function () {
         getDragonBall(i);
     }
 });
+
+*/
