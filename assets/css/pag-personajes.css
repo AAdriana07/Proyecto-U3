@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*Estilos generales*/
+body {
+    background-image: url(https://wallpapers.com/images/hd/dragon-ball-z-c7kbn007qmt9qrb0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: rgb(244, 237, 237);
+    border-bottom: 12px solid #d19a0e;
+    display: flex;
+}
+
+.inicio {
+    text-decoration: none;
+    margin: 1%;
+    padding: 9px 9px;
+    color: rgb(191, 40, 62);
+}
+
+/*estilos para el logo*/
+.logotipo {
+    width: 120px;
+    
+    padding: 0 10px;
+}
+
+main {
+    background-color: rgba(229, 210, 210);
+}
+
+main> h1 {
+    text-align: center;
+}
+
 #personajes-container {
     display: flex;
     flex-wrap: wrap;
@@ -6,23 +47,38 @@
 }
 
 .personajes-card {
-    border: 1px solid #aaa;
+    background-color: rgb(178, 178, 178);
+    color: rgb(255, 255, 255);
+    border: 3px solid #000000;
     border-radius: 10px;
-    width: fit-content;
+    width: 250px;
+    height: 620px;
     padding: 0px 20px 10px;
   }
-  
+
 .name-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.race-info, .gender-info, .planet-info {
+    font-weight:bold;
+    color:white;
 }
   
 .name-container > p {
     font-size: 24px;
     font-weight: bold;
 }
-  
+
+.img-card {
+    /*width: 100%;
+    height: auto;*/
+    width: 200px;
+  height: 400px;
+}
+
 .personajes-card > img {
     width: 200px;
 }

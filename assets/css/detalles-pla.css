@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*Estilos generales*/
+body {
+    background-image: url(https://wallpapers.com/images/hd/dragon-ball-z-c7kbn007qmt9qrb0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 12px solid #d19a0e;
+    display: flex;
+}
+
+.inicio {
+    text-decoration: none;
+    margin: 1%;
+    padding: 9px 9px;
+    color: rgb(191, 40, 62);
+}
+
+/*estilos para el logo*/
+.logotipo {
+    width: 120px;
+    padding: 0 10px;
+}
+
+main {
+    background-color: rgba(229, 210, 210);
+}
+
+main > h1 {
+    text-align: center;
+}
+
+.primer-conteiner {
+    background-color: rgb(6, 6, 6, 0.98);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin: 30px;
+    max-width: 600px;
+}
+
+
+.planet-img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+
+}
+.planet-card {
+    background-color: rgb(23, 98, 30, 0,98);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.characters-container {
+    background-color: rgb(6, 6, 6, 0.98);
+    color: aliceblue;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin: 30px;
+    max-width: 600px;
+}

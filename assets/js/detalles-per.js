@@ -33,6 +33,7 @@ $(document).ready(function () {
     planetCard.append(namePlaneta, planetImg, isDestroyed, planetDescription);
     // Mi función para mostrar el transformaciones del personaje
     let transforCard = $("<div></div>").addClass("transfor-card");
+
     //Info
     for (let transformation of data.transformations) {
           

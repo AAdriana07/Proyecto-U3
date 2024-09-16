@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="es-pe">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dragon Ball</title>
-    <link rel="stylesheet" href="./assets/css/pag-principal.css">
+    <link rel="stylesheet" href="./assets/css/pag-principal.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./assets/js/pag-principal.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png" 
-        alt="logo" class="logotipo">
-        <a href="./pag-principal.html" class="inicio">Inicio</a>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png"
+        alt="logo"
+        class="logotipo"
+      />
+      <a href="./pag-principal.html" class="inicio">Inicio</a>
     </nav>
     <main>
-        <section class="presentacion">
-            <div class="imagen-header"></div>
-            <div class="container-info">
-                <h1 class="sinopsis">SINOPSIS</h1>
-                <p>Dragon Ball Z acontece tras los sucesos de la saga de Piccolo del manga escrito y dibujado, como no podía ser de otra forma, 
-                    por Akira Toriyama. Se trata de la secuela más larga de la saga Dragon Ball.</p>
-                <p>La trama de Dragon Ball Z se centra en la vida adulta de Son Goku, quien tendrá que defender la tierra de los numerosos villanos que amenazan con destruirla. Además, la serie trama de forma paralela la madurez de su hijo Gohan. 
-                    La producción destaca por tener un tono más serio que su predecesora.</p>
-                <p>Se divide en cinco sagas diferentes (Saiyajin, Freezer, Garlic Jr., Cell y Majin Buu) en un total de 291 episodios.</p>
+      <section class="presentacion">
+        <div class="imagen-header"></div>
+        <div class="container-info">
+          <h1 class="sinopsis">SINOPSIS</h1>
+          <p>
+            Dragon Ball Z acontece tras los sucesos de la saga de Piccolo del
+            manga escrito y dibujado, como no podía ser de otra forma, por Akira
+            Toriyama. Se trata de la secuela más larga de la saga Dragon Ball.
+          </p>
+          <p>
+            La trama de Dragon Ball Z se centra en la vida adulta de Son Goku,
+            quien tendrá que defender la tierra de los numerosos villanos que
+            amenazan con destruirla. Además, la serie trama de forma paralela la
+            madurez de su hijo Gohan. La producción destaca por tener un tono
+            más serio que su predecesora.
+          </p>
+          <p>
+            Se divide en cinco sagas diferentes (Saiyajin, Freezer, Garlic Jr.,
+            Cell y Majin Buu) en un total de 291 episodios.
+          </p>
+        </div>
+      </section>
+      <!--dejandoloooo irrrr, los caminossssss no me visteeeeeeeeeeee🥰🥰🥰🥰🥰❤️❤️❤️❤️-->
+      <!--CARDS-->
+      <section class="info">
+        <h1>Contenido</h1>
+        <hr />
+        <div class="container-cards">
+          <div class="container-personajes">
+            <div class="personajes">PERSONAJES</div>
+            <hr>
+            <div class="cards">
+              <img
+                src="https://media.minutouno.com/p/957cdf129df00cff51ae490fc98bc6ad/adjuntos/150/imagenes/041/499/0041499750/goku.jpg"
+                alt="personajes"
+                class="personajes"
+              />
+              <div id="personajes-container"></div>
             </div>
-        </section>
-        <section class="botones">
-            <h1>Contenido</h1>
+            <br>
+            <a href="pag-personajes.html" class="ver-mas">Ver más</a>
+          </div>
 
-            <div class="personajes">
-                <div class="titulo"><a href="" class="btn-personajes">PERSONAJES</a></div>
-                <div class="cars">
-                    <!-- Contenedor donde se mostrarán los personajes -->
-                    <div id="personajes-container"></div>
-                </div>
-                <div class="expandir"><a href="pag-personajes.html" class="ver-mas">Ver más</a></div>
+          <div class="container-planet">
+            <div class="planet">PLANETAS</div>
+            <hr>
+            <div class="cards">
+              <img
+                src="https://dbzrpghabbz.weebly.com/uploads/3/0/1/5/30152557/294462.png?379"
+                alt="planetas"
+                class="planetas"
+              />
+              <div class="card-lugares"></div>
             </div>
-
-            <div class="especies">
-                <div class="titulo"><a href="" class="btn-especies">ESPECIES</a></div>
-                <div class="cars">
-                    <div class="card-especies"></div>
-                </div>
-                <div class="expandir"><a href="pag-especies.html" class="ver-mas">Ver más</a></div>
-            </div>
-
-            <div class="esferas">
-                <div class="titulo"><a href="" class="btn-esferas">ESFERAS</a></div>
-                <div class="cars">
-                    <div class="card-esferas"></div>
-                </div>
-                <div class="expandir"><a href="pag-esferas.html" class="ver-mas">Ver más</a></div>
-            </div>
-
-            <div class="lugares">
-                <div class="titulo"><a href="" class="btn-lugares">LUGARES</a></div>
-                <div class="cars">
-                    <div class="card-lugares"></div>
-                </div>
-                <div class="expandir"><a href="pag-lugares.html" class="ver-mas">Ver más</a></div>
-            </div>
-            
-        </section>
+            <br>
+            <a href="pag-planetas.html" class="ver-mas">Ver más</a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
