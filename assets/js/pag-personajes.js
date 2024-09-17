@@ -16,13 +16,14 @@ function getDragonBall(id) {
         let conteinerImg = $("<div></div>").addClass("container-img");
         conteinerImg.append(img);
 
+        let infoCard = $("<div></div>").addClass("info-card");
+
         // ki, race, gender, originPlanet.name
         //Mostrar race, gender, planet
         let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race-info");
         let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender-info");
         let planet = $("<p></p>").text(data.originPlanet.name.toUpperCase()).addClass("planet-info");
 
-        let infoCard = $("<div></div>").addClass("info-card");
         infoCard.append(race, gender, planet);
 
         //Agregamos los elementos al card
