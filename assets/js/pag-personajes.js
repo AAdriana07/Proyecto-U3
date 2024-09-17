@@ -2,19 +2,24 @@ function getDragonBall(id) {
     $.get(`https://dragonball-api.com/api/characters/${id}`, function (data) {
         // Función para mostrar los personajes
         let personajesCard = $("<div></div>").addClass("personajes-card");
+
+        let firstContainer = $("<div></div>").addClass("first-container");
+
+        let nameContainer = $("<div></div>").addClass("name-container");
         // Mostrar nombre y el ki del personaje
         let name = $(`<a href="detalles-per.html" id="personaje-${id}"></a>`).text(
             data.name.toUpperCase()
         ).addClass("personajes-name");
         let ki = $("<p></p>").text(data.ki);
         
-        let nameContainer = $("<div></div>").addClass("name-container");
         nameContainer.append(name, ki);
 
         //Mostrar imagen 
         let img = $("<img />").attr("src", data.image).addClass("img-card");
         let conteinerImg = $("<div></div>").addClass("container-img");
         conteinerImg.append(img);
+
+        firstContainer.append(nameContainer, conteinerImg);
 
         let infoCard = $("<div></div>").addClass("info-card");
 
@@ -27,7 +32,7 @@ function getDragonBall(id) {
         infoCard.append(race, gender, planet);
 
         //Agregamos los elementos al card
-        personajesCard.append(nameContainer, conteinerImg, infoCard);
+        personajesCard.append(firstContainer, infoCard);
         //Agregamos la card al contendor 
         $("#personajes-container").append(personajesCard);
 
