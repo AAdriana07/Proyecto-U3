@@ -120,11 +120,12 @@ hr {
     /*width: 100%;
     height: auto;*/
     width: 200px;
-  height: 400px;
-  display:block;
-  margin:auto;
+    height: 400px;
+    display:block;
+    margin:auto;
 
 }
+
 
 .personajes-card > img {
     width: 200px;

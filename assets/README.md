@@ -43,13 +43,7 @@ La estructura de la página web se compone de:
 
 
 
-##
+## ta wuapooo
 
-![Botones](./assets/img/botones.png "Botones")
 
-    - El primero es para encriptar
-    
-    - El segundo es para desencriptar
-    
-    - El tercero para limpiar la información. 
 

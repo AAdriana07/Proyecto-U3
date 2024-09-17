@@ -1,3 +1,32 @@
+/*navegacion - barra de menu*/
+nav {
+    background-color: #d19a0e  ;
+    border-bottom: 12px solid #000000;
+    display: flex;
+  }
+  
+  nav > a {
+    font-weight: 900;
+    text-decoration: none;
+    margin: 1%;
+    padding: 9px 13px;
+    color: rgb(0, 0, 0);
+  }
+  
+  nav > a:hover {
+    font-weight: 900;
+    color: #d19a0e;
+    background-color: #070d1b;
+    border-radius: 8px;
+  }
+  
+  /*estilos para el logo*/
+  .logotipo {
+    width: 120px;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  
 #planetas-container {
     display: flex;
     flex-wrap: wrap;
