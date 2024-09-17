@@ -41,7 +41,7 @@ main> h1 {
 
 .personajes-name {
     text-decoration: none;
-    color: orange;
+    color: blue;
     font-family: "Jacques Francois Shadow", serif;
 }
 
@@ -79,7 +79,7 @@ main> h1 {
   
 .name-container > p {
     font-size: 24px;
-    font-family: "Jacques Francois Shadow", serif;
+    font-family:Arial, Helvetica, sans-serif ;
    
 }
 
