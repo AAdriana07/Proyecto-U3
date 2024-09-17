@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: rgb(244, 237, 237);
+    background-color: rgb(0, 0, 0);
     border-bottom: 12px solid #d19a0e;
     display: flex;
 }
@@ -39,6 +39,11 @@ main> h1 {
     text-align: center;
 }
 
+.personajes-name {
+    text-decoration: none;
+    color: white;
+}
+
 #personajes-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +52,15 @@ main> h1 {
 }
 
 .personajes-card {
-    background-color: rgb(178, 178, 178);
-    color: rgb(255, 255, 255);
+    background-image: url(https://i.pinimg.com/236x/8c/97/be/8c97becf4cd034523897d2441e583f80.jpg);
+    
     border: 3px solid #000000;
     border-radius: 10px;
     width: 250px;
     height: 620px;
     padding: 0px 20px 10px;
-  }
+    
+}
 
 .name-container {
     display: flex;
