@@ -8,66 +8,54 @@ body {
   overflow: hidden;
 }
 
+/*navegacion - barra de menu*/
 nav {
-  background-color: #ffa500;
-  border-bottom: 8px solid #000000; /* Reducido el grosor del borde */
+  background-color: #000000  ;
+  border-bottom: 12px solid #ffa500;
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 5px; /* Ajustado el padding */
-  box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
 nav > a {
   font-weight: 900;
   text-decoration: none;
-  margin: 0 5px; /* Reducido el margen horizontal */
-  padding: 5px 10px; /* Reducido el padding */
-  color: rgb(0, 0, 0);
-  font-size: 0.9rem; /* Reducido el tamaño de la fuente */
+  margin: 1%;
+  padding: 8px 12px;
+  color: #ffa500;
 }
 
 nav > a:hover {
   font-weight: 900;
-  color: #ffa500;
-  background-color: #070d1b;
-  border-radius: 6px; /* Reducido el radio del borde */
+  color: #000000;
+  background-color: #ffa500;
+  border-radius: 8px;
 }
 
+/*estilos para el logo*/
 .logotipo {
-  width: 100px; /* Reducido el tamaño del logo */
-  padding: 0 5px;
+  width: 120px;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .presentacion {
   display: flex;
   flex-direction: flex-start; /* Cambiado a columna para ajuste mejor */
-  text-align: center;
-  padding: 10px; /* Ajustado el padding */
-  gap: 20px;
+  text-align: justify;
 
 }
 
 .container-info {
-  background: rgba(23, 20, 46, 0.92);
-  color: rgb(230, 218, 218);
-  padding: 15px; /* Reducido el padding */
-  border-radius: 10px; /* Reducido el radio del borde */
-  margin: 10px; /* Ajustado el margen */
-  /*box-sizing: border-box;*/ /* Incluye padding en el ancho total */
-  width: 50%;
-  flex: 1;
+    background: rgba(3, 2, 20, 0.92);
+    color: rgb(230, 218, 218);
+    border: 1px;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
 }
 
 .imagen-header {
-  background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=800,height=450/catalog/crunchyroll/26079ab060401d8a76039e985d63a3e9.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 200px; /* Ajustado el tamaño de la imagen */
+  width: 100%;
   position: relative;
-  margin-bottom: 10px; /* Añadido margen inferior */
-  width: 450px;
-  width: 40%;
 }
 
 .imagen-header::after {
@@ -80,9 +68,17 @@ nav > a:hover {
   background-image: linear-gradient(to left, #070d1b, transparent);
 }
 
+.imagen-header {
+  background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/26079ab060401d8a76039e985d63a3e9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+}
+
 .sinopsis {
   color: rgb(231, 148, 15);
-  font-size: 25px;
+  font-size: 27px;
 }
 
 p .parrafo {
@@ -90,7 +86,7 @@ p .parrafo {
 }
 
 h1 {
-  font-size: 18px; /* Reducido el tamaño del h1 */
+  font-size: 28px; /* Reducido el tamaño del h1 */
   color: #ffa500;
   margin: 10px 0; /* Reducido el margen superior e inferior */
   text-align: center;
@@ -119,14 +115,14 @@ hr {
   border-radius: 10px; /* Reducido el radio del borde */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Reducida la sombra */
   text-align: center;
-  width: 200%; /*Ajustado el ancho */
-  max-width: 155px; /* Añadido un ancho máximo */
-  max-height: 200px;
+  width: 400px; /*Ajustado el ancho */
+  max-width: 500px; /* Añadido un ancho máximo */
+  max-height: 600px;
 }
 
 .cards img {
-  max-width: 95%;
-  max-height: 0%;
+  width: 300px;
+  height: 210px;
   border-radius: 8px; /* Añadido radio del borde para las imágenes */
 }
 

@@ -10,6 +10,7 @@ body {
     background-position: center;
     font-family: "Quicksand", sans-serif;
     color: rgb(0, 0, 0);
+    margin: 0; /* Elimina márgenes por defecto */
 }
 
 /*navegacion - barra de menu*/

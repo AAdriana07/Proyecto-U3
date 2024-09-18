@@ -2,10 +2,10 @@ var ctx2 = document.getElementById('doughnut').getContext('2d');
 var doughnut = new Chart(ctx2, {
     type: 'doughnut',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Gokú', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
             label: '# Personajes más queridos',
-            data: [20, 16, 3, 5, 2, 3],
+            data: [20, 16, 14, 10, 8, 5],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

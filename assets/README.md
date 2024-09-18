@@ -1,13 +1,13 @@
 # APLICACIÓN WEB (DRAGON BALL)
 
-![Dragón Ball](./img/portada.png "APLICACIÓN WEB")
+![Dragón Ball](./img/Aplicación%20web.png "APLICACIÓN WEB")
 
 ¡Bienvenido a nuestra aplicación web! Sumérgete en el fascinante universo de Dragon Ball Z, una serie que ha dejado una huella imborrable en la cultura pop y sigue conquistando corazones de fans y curiosos por igual. ¡Descubre todo lo que hizo de esta saga un fenómeno mundial!
 
 ## 🔎Identificación de los usuarios
 >Seguro muchos fan de la famosa serie ***"Dragón Ball*** que a cautivado el corazón de muchas personas hasta la actualidad les gustaría recordar el pasado y recorrer la información de los datos principales de la serie, tales como los personajes y planetas.
 
-![Fans](./img/portada.png "fans")
+![Fans](./img/dragon-ball-fans.jpg "fans")
 
 ¡Ahora! con **la aplicación web** diseñada para los fanáticos de la serie ***Dragon Ball***, se podrá crear una **comunidad** donde los usuarios puedan **explorar** en la amplia información recolectada. Es posible **navegar** por las cartas virtuales de los personajes, trasformaciones y planetas dentro del universo de Dragon Ball, para **informarse** de los datos más relevante que nos a traído esta fascinante serie.
 
@@ -31,15 +31,15 @@ La estructura de la página web se compone de:
 
 - **Título:** tema de la página.
 
-![Titulo](./assets/img/ "")
+![Titulo](./img/titulo.png "")
 
 - **Portada** la bienvenida general a todos nuestros usuarios que recorrerán en nuestra página web sobre está maravillosa serie que ha cautivado a muchos fans.
 
-![Portada](./assets/img/ "bienvenida")
+![Portada](./img/Aplicación%20web.png "bienvenida")
 
 - **Logo de la serie:** se ubica al centro de la portada y a la izquierda en toda la página web.
 
-![Logo](./assets/img/logo-removebg-preview.png "Logo")
+![Logo](./img/logo.png "Logo")
 
 - **Barra de menú**: en la barra se encontrarán botones con las opciones de inicio, personajes, planeta, estadísticas y barra de búsqueda.
 
@@ -58,11 +58,11 @@ La estructura de la página web se compone de:
 
 - **Página de personajes**: se visualizará una página de personajes por medio de cartas.
 
-![Página de personajes](./assets/img/ "pág. de personajes")
+![Página de personajes](./img/personajes.png "pág. de personajes")
 
 - **Página de planetas**: se visualizará una página de planetas por medio de cartas.
 
-![Página de planetas](./assets/img/ "pág. de planetas")
+![Página de planetas](./img/planetas.png "pág. de planetas")
 
 - **Detalles de los personajes**:  al momento de presionar en el nombre de unos de los personajes de las cartas, se nos redireccionara a una pagina de detalles del personaje seleccionado.
 
