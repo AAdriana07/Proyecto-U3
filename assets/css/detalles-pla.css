@@ -44,10 +44,12 @@ main {
     background-color: rgba(229, 210, 210);
 }
 
-main > h1 {
+main >h1 {
     text-align: center;
 }
-
+h1{
+  text-align: center;
+}
 .primer-conteiner {
     background-color: rgb(6, 6, 6, 0.98);
     border: 1px solid #000000;

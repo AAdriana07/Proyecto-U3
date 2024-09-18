@@ -1,27 +1,36 @@
 function getPlanets(id) {
     $.get(`https://dragonball-api.com/api/planets/${id}`, function (data) {
         // Función para mostrar los personajes
+
+        // Card principal
         let planetCard = $("<div></div>").addClass("planet-card");
+
+        // Primera card secundaria
+        let firstContainerPla = $("<div></div>").addClass("first-container-planet");
+
+        let nameContainer = $("<div></div>").addClass("name-container");
         // Mostrar nombre del planeta y su id
         let name = $(`<a href="detalles-pla.html" id="planeta-${id}"></a>`).text(
             data.name.toUpperCase()
         ).addClass("planet-name");
-        let num = $("<p></p>").text(`#${data.id}`);
-
-        let nameContainer = $("<div></div>").addClass("name-container");
-        nameContainer.append(name, num);
+        
+        nameContainer.append(name);
 
         //Mostrar imagen del planeta
-        let img = $("<img />").attr("src", data.image);
+        let conteinerImgPla = $("<div></div>").addClass("container-img-planet");
+        let img = $("<img />").attr("src", data.image).addClass("img-planet");
+        conteinerImgPla.append(img);
 
-        //Mostrar isDestroyed y deletedAt
-        let isDestroyed = $(`<p>Is destroyed? ${data.isDestroyed}</p>`).addClass("isdestroyed");
-        
+        firstContainerPla.append(nameContainer, conteinerImgPla);
+
+        //Segunda card secundaria
         let infoCard = $("<div></div>").addClass("info-card");
+        //Mostrar isDestroyed
+        let isDestroyed = $(`<p>Is destroyed? ${data.isDestroyed}</p>`).addClass("isdestroyed");
         infoCard.append(isDestroyed);
 
         //Agregamos los elementos al card
-        planetCard.append(nameContainer, img, infoCard);
+        planetCard.append(firstContainerPla, infoCard);
         //Agregamos la card al contendor 
         $("#planetas-container").append(planetCard);
 

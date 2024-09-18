@@ -1,32 +1,39 @@
-# APLICACIÓN WEB (DRAGÓN BALL)
+# APLICACIÓN WEB (DRAGON BALL)
 
 ![Dragón Ball](./img/portada.png "APLICACIÓN WEB")
 
 ¡Bienvenido a nuestra aplicación web! Sumérgete en el fascinante universo de Dragon Ball Z, una serie que ha dejado una huella imborrable en la cultura pop y sigue conquistando corazones de fans y curiosos por igual. ¡Descubre todo lo que hizo de esta saga un fenómeno mundial!
 
 ## 🔎Identificación de los usuarios
->Seguro muchos fan de la famosa serie ***"Dragón Ball*** que a cautivado el corazón de muchas personas hasta la actualidad les gustaría recordar el pasado y recorrer la información de los datos principales de la serie, tales como los personajes y planetas 
+>Seguro muchos fan de la famosa serie ***"Dragón Ball*** que a cautivado el corazón de muchas personas hasta la actualidad les gustaría recordar el pasado y recorrer la información de los datos principales de la serie, tales como los personajes y planetas.
 
-¡Ahora! con **la aplicación web** que hemos creado en colaboración de cinco programadoras, es posible **navegar** por la información recolectada para **informarse** de los datos más relevante que nos a traído esta fasinante serie.
+![Fans](./img/portada.png "fans")
+
+¡Ahora! con **la aplicación web** diseñada para los fanáticos de la serie ***Dragon Ball***, se podrá crear una **comunidad** donde los usuarios puedan **explorar** en la amplia información recolectada. Es posible **navegar** por las cartas virtuales de los personajes, trasformaciones y planetas dentro del universo de Dragon Ball, para **informarse** de los datos más relevante que nos a traído esta fascinante serie.
 
 ## 📌Objetivos del proyecto 
 
-Con **la aplicación web**, los usuarios podran visualizar y navegar por el entorno creado especialmente para ser intuitivo y un con diseño visual creativo, con el **objetivo** ...
+Con **la aplicación web**, los usuarios podrán visualizar y navegar por el entorno creado especialmente para ser intuitivo y un con diseño visual creativo, con el **objetivo** de proporcionar una plataforma para que los fans de la serie puedan explorar sobre la información del mundo de Dragon Ball.
 
 ## 📝Descripción de nuestro producto 
 
-La **aplicación web** ....
+En la **aplicación web** de Dragón Ball se podrá explorar una amplia información de tarjetas de personajes juntos a sus trasformaciones y planetas de está maravillosa serie, ofreciendo un experiencia interactiva para la navegación del usuario.
 
-## Historias de Usuario
+## 🧩Tecnologías utilizadas 
+- HTML
+- CSS
+- JavaScript
+- JQuery
+
+## 📈Historias de Usuario
 
 La estructura de la página web se compone de:
 
 - **Título:** tema de la página.
 
 ![Titulo](./assets/img/ "")
-## Ale no te olvides de los prototipos que se hcieron al principio, si alta y baja fidelidad una descripcion y ya luego dejas un espacio para las dos fotos c:
-## hablas de los de alta y baja aaa okeyyy -anotado okiiiiiiiiii
-- **Portada** la bienvenida general a todos nuestros usuarios que recorreran en nuestra página web sobre está maravillosa serie que ha cutivado a muchos fans.
+
+- **Portada** la bienvenida general a todos nuestros usuarios que recorrerán en nuestra página web sobre está maravillosa serie que ha cautivado a muchos fans.
 
 ![Portada](./assets/img/ "bienvenida")
 
@@ -34,16 +41,46 @@ La estructura de la página web se compone de:
 
 ![Logo](./assets/img/logo-removebg-preview.png "Logo")
 
+- **Barra de menú**: en la barra se encontrarán botones con las opciones de inicio, personajes, planeta, estadísticas y barra de búsqueda.
 
-- **Página principal:** la página principal contiene la sinopsis de la serie y una imagen de referencia funto a su contenido:
+![Barra de menú](./assets/img/logo-removebg-preview.png "Barra de menú")
 
-    - **Personajes**; una referencia de lo que podría contener junto a un b
+- **Filtros**: ayuda a filtrar la información para que el usuario pueda encontrar el dato que está buscando.
+
+![Filtros](./assets/img/logo-removebg-preview.png "Filtros")
+
+- **Página principal:** la página principal contiene la sinopsis de la serie y una imagen de referencia junto a su contenido:
+
+    - **Personajes**; una referencia de lo que podría contener junto a un botón para ver más información al respecto de los personajes.
+    - **Planetas**; una referencia de lo que podría contener junto a un botón para ver más información al respecto de los planetas del mundo de Dragon Ball.
 
 ![Página principal](./assets/img/ "pág. principal")
 
+- **Página de personajes**: se visualizará una página de personajes por medio de cartas.
 
+![Página de personajes](./assets/img/ "pág. de personajes")
 
-## ta wuapooo
+- **Página de planetas**: se visualizará una página de planetas por medio de cartas.
 
+![Página de planetas](./assets/img/ "pág. de planetas")
 
+- **Detalles de los personajes**:  al momento de presionar en el nombre de unos de los personajes de las cartas, se nos redireccionara a una pagina de detalles del personaje seleccionado.
 
+![Página de detalles personajes](./assets/img/ "pág. de detalles de personajes")
+
+- **Detalles de los personajes**:  al momento de presionar en el nombre de unos de los planetas de las cartas, se nos redireccionara a una pagina de detalles del planeta seleccionado.
+
+![Página de detalles planetas](./assets/img/ "pág. de detalles planetas")
+
+- **Paginas de estadísticas**: nos llevará a una página donde se podrá visualizar las estadísticas relacionada con la serie de Dragon Ball en la aplicación web.
+
+![Pág. estadísticas](./assets/img/logo-removebg-preview.png "pág. estadísticas")
+
+l## Proceso de creación del la aplicación web
+- **Prototipo de baja fidelidad**
+
+![Prototipo de baja fidelidad](./assets/img/logo-removebg-preview.png "baja fidelidad")
+
+- **Prototipo de alta fidelidad**
+
+![Prototipo de alta fidelidad](./assets/img/logo-removebg-preview.png "alta fidelidad")

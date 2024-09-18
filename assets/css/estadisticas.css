@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://image.jeuxvideo.com/medias-crop-1200-675/169504/1695041640-1873-card.jpg);
+    /*background: #d4bdde;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Nerko One", cursive;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(255,165,0);
+    background: radial-gradient(circle, rgba(255,165,0,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.chart {
+    padding: 5rem;
+    border: 3px solid #ffa500;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    width: 550px;
+    height: 550px;
+
+}
+
+canvas {
+    width: 100% !important; /* Asegura que el gráfico se ajuste al tamaño del contenedor */
+    height: 100% !important; /* Asegura que el gráfico se ajuste al tamaño del contenedor */
+}

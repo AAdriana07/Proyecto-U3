@@ -45,7 +45,7 @@ main {
 
 .btn {
     display: block;
-    background-color: rgb(224, 158, 24);
+    background-color: #ffa500;
     font-size: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -61,12 +61,12 @@ main {
 
 .btn:hover {
     background-color: rgb(33, 32, 30);
-    color: rgb(234, 181, 8);
+    color: #ffa500;
 }
 
 .btn:focus {
     background-color: rgb(33, 32, 30);
-    color: rgb(234, 181, 8);
+    color: #ffa500;
 }
 
 

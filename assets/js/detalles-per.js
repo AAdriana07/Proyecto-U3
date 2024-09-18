@@ -2,7 +2,11 @@ $(document).ready(function () {
     const data = JSON.parse(localStorage.getItem("personaje-data"));
 
     // Mi función para mostrar los personajes
-    let personajesCard = $("<div></div>").addClass("personajes-card");
+    let conteinerGeneral = $("<div></div>").addClass("conteiner-general");
+
+    // Primer conteiner
+    let conteinerImagen = $("<div></div>").addClass("conteiner-imagen-dts");
+
     //Contenedor
     let nameContainer = $("<div></div>").addClass("name-container");
     // Nombre y ki del personaje
@@ -13,15 +17,22 @@ $(document).ready(function () {
     nameContainer.append(name, ki);
 
     //Mostrar imagen 
-    let img = $("<img />").attr("src", data.image);
+    let conteinerImg = $("<div></div>").addClass("conteiner-img-first");
+    let img = $("<img />").attr("src", data.image).addClass("img-personajes");
+    conteinerImg.append(img);
+    conteinerImagen.append(nameContainer, conteinerImg);
+    
+    //Segundo conteiner
+    let conteinerInformacion = $("<div></div>").addClass("conteiner-informacion");
 
+    let infoDatos = $("<div></div>").addClass("info-datos");
     //Mostrar race, gender, planet
     let maxKi = $(`<p>MaxKi: ${data.maxKi}</p>`).addClass("maxki");
     let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race");
     let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender");
     let description = $("<p></p>").text(data.description).addClass("description");
-    let infoCard = $("<div></div>").addClass("info-card");
-    
+    infoDatos.append(maxKi, race, gender, description);
+
     // Mi función para mostrar el planet del personaje
     let planetCard = $("<div></div>").addClass("planet-card");
     //Info
@@ -31,6 +42,10 @@ $(document).ready(function () {
     let planetDescription = $("<p></p>").text(data.originPlanet.description);
     
     planetCard.append(namePlaneta, planetImg, isDestroyed, planetDescription);
+
+    //Obtenemos los elementos del segundo conteiner
+    conteinerInformacion.append(infoDatos);
+
     // Mi función para mostrar el transformaciones del personaje
     let transforCard = $("<div></div>").addClass("transfor-card");
 
@@ -47,12 +62,11 @@ $(document).ready(function () {
     }
 
     //Agregamos los elementos al card
-    personajesCard.append(nameContainer, img, infoCard);
-    infoCard.append(maxKi, race, gender, description);
+    conteinerGeneral.append(conteinerImagen, conteinerInformacion);
     
 
     //Agregamos la card al contendor 
-    $("#personajes-container").append(personajesCard);
+    $("#personajes-container").append(conteinerGeneral);
     $("#personajes-container").append(planetCard);
     $("#personajes-container").append(transforCard);
 
