@@ -29,9 +29,34 @@ h1 {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     margin-bottom: 40px;
-    padding: 10px;
+    padding: 20px;
 
 }
+
+.volver {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+a {
+    background-color: #070707; /* Color de fondo */
+    color: rgb(248, 165, 32); /* Color del texto */
+    padding: 15px 32px; /* Relleno del botón */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 18px; /* Tamaño de la fuente */
+    margin: 4px 25px; /* Márgenes */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border: none; /* Sin borde */
+    border-radius: 9px; /* Bordes redondeados */
+}
+
+a:hover {
+    background-color: rgb(248, 165, 32);
+    color: #070707; 
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -53,4 +78,13 @@ h1 {
 canvas {
     width: 100% !important; /* Asegura que el gráfico se ajuste al tamaño del contenedor */
     height: 100% !important; /* Asegura que el gráfico se ajuste al tamaño del contenedor */
+}
+
+prueba {
+    background: rgb(255, 166, 0);
+    background: rgb(112, 76, 10);
+    background: rgb(198, 139, 30);
+    background: rgb(198, 139, 30);
+    background: rgb(50, 36, 10);
+    background: rgb(0, 0, 0);
 }
