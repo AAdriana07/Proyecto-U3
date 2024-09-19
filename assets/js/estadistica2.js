@@ -2,9 +2,9 @@ var ctx2 = document.getElementById('doughnut').getContext('2d');
 var doughnut = new Chart(ctx2, {
     type: 'doughnut',
     data: {
-        labels: ['Gokú', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Gokú', 'Vegeta', 'Gohan', 'Piccolo', 'Trunks del Futuro', 'Krillin'],
         datasets: [{
-            label: '# Personajes más queridos',
+            label: '# Personajes más populares',
             data: [20, 16, 14, 10, 8, 5],
             backgroundColor: [
                 'rgba(244, 120, 38, 0.8)',

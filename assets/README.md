@@ -41,20 +41,12 @@ La estructura de la página web se compone de:
 
 ![Logo](./img/logo.png "Logo")
 
-- **Barra de menú**: en la barra se encontrarán botones con las opciones de inicio, personajes, planeta, estadísticas y barra de búsqueda.
-
-![Barra de menú](./assets/img/logo-removebg-preview.png "Barra de menú")
-
-- **Filtros**: ayuda a filtrar la información para que el usuario pueda encontrar el dato que está buscando.
-
-![Filtros](./assets/img/logo-removebg-preview.png "Filtros")
-
 - **Página principal:** la página principal contiene la sinopsis de la serie y una imagen de referencia junto a su contenido:
 
     - **Personajes**; una referencia de lo que podría contener junto a un botón para ver más información al respecto de los personajes.
     - **Planetas**; una referencia de lo que podría contener junto a un botón para ver más información al respecto de los planetas del mundo de Dragon Ball.
 
-![Página principal](./assets/img/ "pág. principal")
+![Página principal](./img/pag%20principal.png "pág. principal")
 
 - **Página de personajes**: se visualizará una página de personajes por medio de cartas.
 
@@ -66,21 +58,24 @@ La estructura de la página web se compone de:
 
 - **Detalles de los personajes**:  al momento de presionar en el nombre de unos de los personajes de las cartas, se nos redireccionara a una pagina de detalles del personaje seleccionado.
 
-![Página de detalles personajes](./assets/img/ "pág. de detalles de personajes")
+![Página de detalles personajes](./img/detalles%20perosnajes.png "pág. de detalles de personajes")
 
-- **Detalles de los personajes**:  al momento de presionar en el nombre de unos de los planetas de las cartas, se nos redireccionara a una pagina de detalles del planeta seleccionado.
+- **Detalles de los planetas**:  al momento de presionar en el nombre de unos de los planetas de las cartas, se nos redireccionara a una pagina de detalles del planeta seleccionado.
 
-![Página de detalles planetas](./assets/img/ "pág. de detalles planetas")
+![Página de detalles planetas](./img/detalles%20planeta.png "pág. de detalles planetas")
 
 - **Paginas de estadísticas**: nos llevará a una página donde se podrá visualizar las estadísticas relacionada con la serie de Dragon Ball en la aplicación web.
 
-![Pág. estadísticas](./assets/img/logo-removebg-preview.png "pág. estadísticas")
+![Pág. estadísticas](./img/estadisticas%20.png "pág. estadísticas")
 
 l## Proceso de creación del la aplicación web
 - **Prototipo de baja fidelidad**
 
-![Prototipo de baja fidelidad](./assets/img/logo-removebg-preview.png "baja fidelidad")
+![Prototipo de baja fidelidad](./img/baja.jpeg "baja fidelidad")
 
 - **Prototipo de alta fidelidad**
 
-![Prototipo de alta fidelidad](./assets/img/logo-removebg-preview.png "alta fidelidad")
+![Prototipo de alta fidelidad](./img/1.jpeg "alta fidelidad")
+![Prototipo de alta fidelidad](./img/2.jpeg "alta fidelidad")
+![Prototipo de alta fidelidad](./img/3.jpeg "alta fidelidad")
+![Prototipo de alta fidelidad](./img/4.jpeg "alta fidelidad")

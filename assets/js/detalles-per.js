@@ -12,7 +12,7 @@ $(document).ready(function () {
     // Nombre y ki del personaje
     let name = $("<h1>data.name</h1>").text(
         data.name.toUpperCase()).addClass("personajes-name");
-    let ki = $("<p></p>").text(data.ki);
+    let ki = $(`<p>${data.ki} ki</p>`);
     
     nameContainer.append(name, ki);
 
@@ -28,38 +28,53 @@ $(document).ready(function () {
     let infoDatos = $("<div></div>").addClass("info-datos");
     //Mostrar race, gender, planet
     let maxKi = $(`<p>MaxKi: ${data.maxKi}</p>`).addClass("maxki");
-    let race = $("<p></p>").text(data.race.toUpperCase()).addClass("race");
-    let gender = $("<p></p>").text(data.gender.toUpperCase()).addClass("gender");
+    let race = $(`<p>Raza: ${data.race.toUpperCase()}</p>`).addClass("race");
+    let gender = $(`<p> Género: ${data.gender.toUpperCase()}</p>`).addClass("gender");
     let description = $("<p></p>").text(data.description).addClass("description");
     infoDatos.append(maxKi, race, gender, description);
-
+    //Obtenemos los elementos del segundo conteiner
+    conteinerInformacion.append(infoDatos);
+    
     // Mi función para mostrar el planet del personaje
+
     let planetCard = $("<div></div>").addClass("planet-card");
+    // Primer contenedorplanet
+    let imgConteiner = $("<div></div>").addClass("img-conteiner-planet");
     //Info
     let namePlaneta = $("<p></p>").text(data.originPlanet.name.toUpperCase());
     let planetImg = $("<img />").attr("src", data.originPlanet.image);
-    let isDestroyed = $("<p></p>").text(data.originPlanet.isDestroyed);
+    
+    imgConteiner.append(namePlaneta, planetImg);
+
+    //Segundo contenedor
+    let infoConteiner = $("<div></div>").addClass("info-conteiner-planet");
+    let isDestroyed = $(`<p>Is Destoyed? ${data.originPlanet.isDestroyed}</p>`).addClass("subtitulo");
     let planetDescription = $("<p></p>").text(data.originPlanet.description);
     
-    planetCard.append(namePlaneta, planetImg, isDestroyed, planetDescription);
+    infoConteiner.append(isDestroyed, planetDescription);
+    planetCard.append(imgConteiner, infoConteiner);
 
-    //Obtenemos los elementos del segundo conteiner
-    conteinerInformacion.append(infoDatos);
-
+    
+    
     // Mi función para mostrar el transformaciones del personaje
     let transforCard = $("<div></div>").addClass("transfor-card");
 
     //Info
     for (let transformation of data.transformations) {
-          
+        // Crear un contenedor individual para cada personaje
+        let charCard = $("<div></div>").addClass("char-card");
+
         //Informacion de las trasformaciones del personaje
         let nameTrasfor = $(`<p></p>`).text(transformation.name.toUpperCase()).addClass("name-transfor");
-        let idTrasfor = $(`<p></p>`).text(`#${transformation.id}`).addClass("id-Trasfor");
+        let imgCon = $("<div></div>").addClass("img-con");
         let imgTrasfor = $(`<img />`).attr("src", transformation.image).addClass("img-transfor");
+        imgCon.append(imgTrasfor);
         let kiTrasfor = $(`<p></p>`).text(transformation.ki).addClass("ki-trasfor");
         //Añadiendo elementos al transforCard 
-        transforCard.append(nameTrasfor, idTrasfor, imgTrasfor, kiTrasfor);
+        charCard.append(nameTrasfor, imgCon, kiTrasfor);
+        transforCard.append(charCard);
     }
+
 
     //Agregamos los elementos al card
     conteinerGeneral.append(conteinerImagen, conteinerInformacion);
@@ -67,8 +82,8 @@ $(document).ready(function () {
 
     //Agregamos la card al contendor 
     $("#personajes-container").append(conteinerGeneral);
-    $("#personajes-container").append(planetCard);
-    $("#personajes-container").append(transforCard);
+    $("#planet-container").append(planetCard);
+    $("#transformaciones").append(transforCard);
 
 });
 

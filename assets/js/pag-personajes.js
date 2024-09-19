@@ -13,7 +13,7 @@ function getDragonBall(id) {
         let name = $(`<a href="detalles-per.html" id="personaje-${id}"></a>`).text(
             data.name.toUpperCase()
         ).addClass("personajes-name");
-        let ki = $("<p></p>").text(data.ki);
+        let ki = $(`<p>${data.ki} ki</p>`);
         
         nameContainer.append(name, ki);
 
@@ -31,7 +31,7 @@ function getDragonBall(id) {
         //Mostrar race, gender, planet
         let race = $(`<p>RAZA: ${data.race.toUpperCase()}</p>`).addClass("race-info");
         let gender = $(`<p>GÉNERO: ${data.gender.toUpperCase()}</p>`).addClass("gender-info");
-        let planet = $(`<p>PLANETA: ${data.race.toUpperCase()}</p>`).addClass("planet-info");
+        let planet = $(`<p>PLANETA: ${data.originPlanet.name.toUpperCase()}</p>`).addClass("planet-info");
 
         infoCard.append(race, gender, planet);
 

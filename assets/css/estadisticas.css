@@ -62,13 +62,15 @@ a:hover {
     align-items: center;
     justify-content: center;
     gap: 200px;
+    
 }
 
 .chart {
     padding: 5rem;
     border: 3px solid #ffa500;
     border-radius: 1rem;
-    background: rgb(255, 255, 255);
+    /*background: rgb(255, 255, 255);*/
+    background-color: rgba(41, 39, 39, 0.433);
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
     width: 550px;
     height: 550px;
@@ -81,10 +83,10 @@ canvas {
 }
 
 prueba {
-    background: rgb(255, 166, 0);
-    background: rgb(112, 76, 10);
-    background: rgb(198, 139, 30);
-    background: rgb(198, 139, 30);
-    background: rgb(50, 36, 10);
-    background: rgb(0, 0, 0);
+    background: rgba(255, 166, 0);
+    background: rgba(112, 76, 10);
+    background: rgba(198, 139, 30);
+    background: rgba(198, 139, 30);
+    background: rgba(50, 36, 10);
+    background: rgba(0, 0, 0);
 }
